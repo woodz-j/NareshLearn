@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NareshLearn.Api/NareshLearn.Api.csproj" />
+    <Project Path="src/NareshLearn.Application/NareshLearn.Application.csproj" />
+    <Project Path="src/NareshLearn.Domain/NareshLearn.Domain.csproj" />
+    <Project Path="src/NareshLearn.Infrastructure/NareshLearn.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/NareshLearn.IntegrationTests/NareshLearn.IntegrationTests.csproj" />
+    <Project Path="tests/NareshLearn.UnitTests/NareshLearn.UnitTests.csproj" />
+  </Folder>
+</Solution>
