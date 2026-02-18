@@ -1,0 +1,32 @@
+ 
+# Python / Jupyter
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# Visual Studio / .NET (from your earlier error)
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+
+# macOS junk
+.DS_Store
+
+# Windows junk
+Thumbs.db
+desktop.ini
+
+# Large files or data (don't commit big datasets)
+data/*.csv
+*.zip
+*.rar
