@@ -106,3 +106,4 @@ C:\Users\woodz\.NET Projects\NareshLearn\tests\NareshLearn.UnitTests\obj\Debug\n
 C:\Users\woodz\.NET Projects\NareshLearn\tests\NareshLearn.UnitTests\obj\Debug\net10.0\NareshLearn.UnitTests.pdb
 C:\Users\woodz\.NET Projects\NareshLearn\tests\NareshLearn.UnitTests\obj\Debug\net10.0\NareshLearn.UnitTests.genruntimeconfig.cache
 C:\Users\woodz\.NET Projects\NareshLearn\tests\NareshLearn.UnitTests\obj\Debug\net10.0\ref\NareshLearn.UnitTests.dll
+C:\Users\woodz\.NET Projects\NareshLearn\tests\NareshLearn.UnitTests\obj\Debug\net10.0\NareshLearn.UnitTests.sourcelink.json

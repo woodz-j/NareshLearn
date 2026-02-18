@@ -17,3 +17,4 @@ C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debu
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.pdb
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.genruntimeconfig.cache
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\ref\NareshLearn.Infrastructure.dll
+C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.sourcelink.json

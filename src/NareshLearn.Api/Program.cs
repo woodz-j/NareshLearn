@@ -1,5 +1,46 @@
+
+using NareshLearn.Application.Auth;
+using NareshLearn.Application.Auth.Register;
+using NareshLearn.Application.Users;
+using NareshLearn.Infrastructure.Auth;
+using NareshLearn.Infrastructure.Users;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container
+builder.Services.AddControllers();
+
+// Swagger (API documentation)
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Application services
+builder.Services.AddScoped<RegisterUserService>();
+
+// TEMP Infrastructure (replace with EF Core later)
+builder.Services.AddSingleton<IUserRepository, InMemoryUserRepository>();
+builder.Services.AddSingleton<IPasswordHasher, DevPasswordHasher>();
+
+var app = builder.Build();
+
+// Configure middleware pipeline
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+// Enables controller endpoints
+app.MapControllers();
+
+app.Run();
+
+
+#region old
+/*
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -14,7 +55,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-/*
+
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -33,10 +74,11 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
-*/
+
 app.Run();
-/*
+
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }*/
+#endregion

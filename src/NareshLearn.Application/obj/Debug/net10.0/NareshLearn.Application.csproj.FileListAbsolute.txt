@@ -13,3 +13,4 @@ C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\n
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\refint\NareshLearn.Application.dll
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.pdb
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\ref\NareshLearn.Application.dll
+C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.sourcelink.json
