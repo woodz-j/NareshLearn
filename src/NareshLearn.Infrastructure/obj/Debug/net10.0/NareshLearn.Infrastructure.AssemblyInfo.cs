@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NareshLearn.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3400f6efb88142d80e23f437e10caa139880e3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370825ded544c1d0e4d85b9469e29f4273126cd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NareshLearn.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NareshLearn.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

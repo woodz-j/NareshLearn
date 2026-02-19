@@ -4,6 +4,9 @@ using NareshLearn.Application.Auth.Register;
 using NareshLearn.Application.Users;
 using NareshLearn.Infrastructure.Auth;
 using NareshLearn.Infrastructure.Users;
+using Microsoft.EntityFrameworkCore;
+using NareshLearn.Infrastructure.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +21,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<RegisterUserService>();
 
 // TEMP Infrastructure (replace with EF Core later)
-builder.Services.AddSingleton<IUserRepository, InMemoryUserRepository>();
-builder.Services.AddSingleton<IPasswordHasher, DevPasswordHasher>();
+//builder.Services.AddSingleton<IUserRepository, InMemoryUserRepository>();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IPasswordHasher, DevPasswordHasher>();
+
+//builder.Services.AddSingleton<IPasswordHasher, DevPasswordHasher>();
 
 var app = builder.Build();
 
