@@ -8,9 +8,9 @@ C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\n
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.AssemblyInfoInputs.cache
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.AssemblyInfo.cs
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.csproj.CoreCompileInputs.cache
+C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.sourcelink.json
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLe.8CA776CB.Up2Date
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.dll
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\refint\NareshLearn.Application.dll
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.pdb
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\ref\NareshLearn.Application.dll
-C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Application\obj\Debug\net10.0\NareshLearn.Application.sourcelink.json

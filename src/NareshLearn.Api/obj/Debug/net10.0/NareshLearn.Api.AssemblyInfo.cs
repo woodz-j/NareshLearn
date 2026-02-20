@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NareshLearn.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370825ded544c1d0e4d85b9469e29f4273126cd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8467e0991dcd1ee708675468537f8b5e17193d03")]
 [assembly: System.Reflection.AssemblyProductAttribute("NareshLearn.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NareshLearn.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

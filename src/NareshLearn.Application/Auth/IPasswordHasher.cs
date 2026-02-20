@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NareshLearn.Application.Auth
+﻿namespace NareshLearn.Application.Auth
 {
     public interface IPasswordHasher
     {
         string Hash(string password);
+        bool Verify(string password, string passwordHash);
+
     }
 }

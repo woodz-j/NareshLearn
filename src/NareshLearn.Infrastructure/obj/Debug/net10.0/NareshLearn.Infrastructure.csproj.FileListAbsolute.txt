@@ -11,10 +11,10 @@ C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debu
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.AssemblyInfo.cs
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.sourcelink.json
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLe.D25F0EAE.Up2Date
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.dll
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\refint\NareshLearn.Infrastructure.dll
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.pdb
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.genruntimeconfig.cache
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\ref\NareshLearn.Infrastructure.dll
-C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Infrastructure\obj\Debug\net10.0\NareshLearn.Infrastructure.sourcelink.json

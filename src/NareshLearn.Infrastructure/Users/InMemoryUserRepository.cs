@@ -19,5 +19,11 @@ namespace NareshLearn.Infrastructure.Users
             _users.Add(user);
             return Task.CompletedTask;
         }
+
+        public Task<User?> GetByEmailAsync(string email, CancellationToken ct)
+        {
+            var user = _users.FirstOrDefault(u => u.Email == email);
+            return Task.FromResult(user);
+        }
     }
 }

@@ -15,5 +15,7 @@ namespace NareshLearn.Infrastructure.Auth
             var bytes = SHA256.HashData(Encoding.UTF8.GetBytes(password));
             return Convert.ToBase64String(bytes);
         }
+        public bool Verify(string password, string passwordHash)
+            => Hash(password) == passwordHash;
     }
 }

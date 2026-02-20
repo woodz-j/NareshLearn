@@ -25,5 +25,8 @@ namespace NareshLearn.Infrastructure.Users
             _db.Users.Add(user);
             await _db.SaveChangesAsync(ct);
         }
+
+        public Task<User?> GetByEmailAsync(string email, CancellationToken ct)
+            => _db.Users.FirstOrDefaultAsync(u => u.Email == email, ct);
     }
 }

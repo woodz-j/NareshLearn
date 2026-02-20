@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NareshLearn.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3400f6efb88142d80e23f437e10caa139880e3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8467e0991dcd1ee708675468537f8b5e17193d03")]
 [assembly: System.Reflection.AssemblyProductAttribute("NareshLearn.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NareshLearn.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
