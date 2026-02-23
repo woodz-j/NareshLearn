@@ -6,9 +6,13 @@ using NareshLearn.Application.Auth;
 using NareshLearn.Application.Auth.Login;
 using NareshLearn.Application.Auth.Register;
 using NareshLearn.Application.Users;
+using NareshLearn.Application.Courses;
+using NareshLearn.Application.Courses.Create;
+using NareshLearn.Application.Courses.List;
 using NareshLearn.Infrastructure.Auth;
 using NareshLearn.Infrastructure.Data;
 using NareshLearn.Infrastructure.Users;
+using NareshLearn.Infrastructure.Courses;
 using System.Text;
 using System.Collections.Generic;
 
@@ -29,13 +33,30 @@ builder.Services.AddSwaggerGen(options =>
         Type = SecuritySchemeType.Http,
         Scheme = "bearer",
         BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Name = "Authorization",
         Description = "Paste the JWT token only (no quotes, no 'Bearer ')."
     });
-
+    
     options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
     {
         [new OpenApiSecuritySchemeReference("bearer", document)] = new List<string>()
     });
+    /*
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "bearer"
+                }
+            },
+            new List<string>()
+        }
+    });*/
 });
 // Application services
 builder.Services.AddScoped<RegisterUserService>();
@@ -53,6 +74,10 @@ builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
 builder.Services.AddScoped<RegisterUserService>();
 builder.Services.AddScoped<LoginUserService>();
+
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<CreateCourseService>();
+builder.Services.AddScoped<ListCoursesService>();
 
 // JWT settings
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));

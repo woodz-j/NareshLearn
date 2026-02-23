@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NareshLearn.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8467e0991dcd1ee708675468537f8b5e17193d03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d293ed87856fa87c8cb71243b56c587ad88b11f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NareshLearn.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NareshLearn.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

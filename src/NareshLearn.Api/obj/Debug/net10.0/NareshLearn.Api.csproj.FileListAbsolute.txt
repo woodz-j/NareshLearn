@@ -163,4 +163,3 @@ C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Api\obj\Debug\net10.0\r
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Api\obj\Debug\net10.0\NareshLearn.Api.pdb
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Api\obj\Debug\net10.0\NareshLearn.Api.genruntimeconfig.cache
 C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Api\obj\Debug\net10.0\ref\NareshLearn.Api.dll
-C:\Users\woodz\.NET Projects\NareshLearn\src\NareshLearn.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

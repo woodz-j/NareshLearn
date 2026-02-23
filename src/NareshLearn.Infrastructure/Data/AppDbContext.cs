@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NareshLearn.Domain.Users;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using NareshLearn.Domain.Courses;
+
 
 namespace NareshLearn.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
         public DbSet<User> Users => Set<User>();
+        public DbSet<Course> Courses => Set<Course>();
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
