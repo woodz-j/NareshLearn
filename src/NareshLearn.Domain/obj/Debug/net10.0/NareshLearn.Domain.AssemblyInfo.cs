@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NareshLearn.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d293ed87856fa87c8cb71243b56c587ad88b11f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d80e3b53536fcba874650fb551bc63cbc731872d")]
 [assembly: System.Reflection.AssemblyProductAttribute("NareshLearn.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NareshLearn.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

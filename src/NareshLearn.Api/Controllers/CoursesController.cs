@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using NareshLearn.Application.Courses.Create;
 using NareshLearn.Application.Courses.List;
+using NareshLearn.Api.Auth;
 
 namespace NareshLearn.Api.Controllers
 {
@@ -37,7 +38,9 @@ namespace NareshLearn.Api.Controllers
         {
             var sub = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
 
-            if (!Guid.TryParse(sub, out var instructorId))
+            /*if (!Guid.TryParse(sub, out var instructorId))
+                return Unauthorized(new { error = "Invalid token subject (sub)." });*/
+            if (!User.TryGetUserId(out var instructorId))
                 return Unauthorized(new { error = "Invalid token subject (sub)." });
 
             var result = await service.CreateAsync(instructorId, request, ct);
