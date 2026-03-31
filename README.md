@@ -1,199 +1,256 @@
-# NareshLearn LMS --- Backend (Clean Architecture, .NET, EF Core, SQLite)
+# NareshLearn LMS — Backend (Clean Architecture + Vertical Slices)
 
-## Overview
+## 🚀 Overview
 
-NareshLearn is a public SaaS Learning Management System backend built
-using ASP.NET Core and Clean Architecture principles. The project
-demonstrates professional backend engineering practices including
-domain-driven design, layered architecture, EF Core persistence, and
-unit testing.
+NareshLearn is a SaaS Learning Management System (LMS) backend built with **ASP.NET Core**, demonstrating **Clean Architecture combined with feature-based vertical slices**.
 
-This repository represents a production-grade backend foundation capable
-of supporting authentication, course management, enrollments, and full
-frontend integration.
+It is designed as a **production-grade, portfolio-ready system** that showcases modern backend engineering practices used in real-world products.
 
-------------------------------------------------------------------------
+### Current Capabilities
+- JWT authentication (custom implementation)
+- Role-based authorization (Student / Instructor / Admin)
+- Public course listing
+- Instructor-only course creation
+- EF Core persistence with SQLite
+- Unit-tested application layer
 
-## Architecture
+### 🔭 Roadmap (visible future direction)
+- Angular frontend integration
+- Integration tests (end-to-end)
+- Docker containerization
+- CI/CD pipeline (GitHub Actions / Azure DevOps)
+- Course publishing workflow
+- Instructor ownership rules
+- Enrollment system
 
-The solution follows Clean Architecture with strict separation of
-concerns:
+---
 
-    NareshLearn/
-     ├─ Domain           → core business entities and rules
-     ├─ Application      → use cases and interfaces
-     ├─ Infrastructure   → database access and external implementations
-     ├─ Api              → HTTP interface and dependency injection
-     └─ Tests            → unit and integration tests
+## 🧱 Architecture
 
-Benefits:
+The project follows **Clean Architecture** with strict separation of concerns:
 
--   High maintainability
--   Testability
--   Scalability
--   Framework independence at core layers
+```
+NareshLearn/
+ ├─ Domain           → business rules and entities
+ ├─ Application      → use cases (vertical slices)
+ ├─ Infrastructure   → EF Core, persistence, external services
+ ├─ Api              → HTTP layer, authentication, DI
+ └─ Tests            → unit and integration tests
+```
 
-------------------------------------------------------------------------
+### Dependency Rule
 
-## Domain Layer
+```
+Domain
+↑
+Application
+↑
+Infrastructure
+↑
+API
+```
 
-Implements core business logic and rules.
+- Domain has **zero framework dependencies**
+- Application depends only on Domain
+- Infrastructure implements abstractions
+- API orchestrates requests
 
-Features:
+---
 
--   User entity with encapsulated state
--   Role enum (Student, Instructor, Admin)
--   Domain-level validation and invariant protection
--   AuditableEntity base class providing:
-    -   GUID identifiers
-    -   Creation timestamps
-    -   Update tracking
--   DomainException for business rule enforcement
+## 🧩 Vertical Slice Implementation
 
-------------------------------------------------------------------------
+Within Clean Architecture, the system is implemented using **feature-based vertical slices**.
 
-## Application Layer
+Instead of grouping by technical layers, features are grouped by behavior:
 
-Implements business use cases and abstractions.
+```
+Application/
+  Auth/
+    Register/
+    Login/
+  Courses/
+    Create/
+    List/
+```
 
-Implemented:
+Each slice includes:
+- Request models
+- Application logic
+- Domain interaction
+- Persistence
+- API endpoint
+- Tests
 
-### RegisterUserService
+---
 
-Responsibilities:
+## 🔄 Example Flow — Create Course
 
--   Validates business rules
--   Prevents duplicate email registration
--   Hashes passwords via abstraction
--   Uses repository abstraction
--   Returns structured result types
+```
+HTTP Request (POST /api/courses)
+        ↓
+CoursesController (Authorization + JWT extraction)
+        ↓
+CreateCourseService (Application logic)
+        ↓
+Course (Domain entity validation)
+        ↓
+ICourseRepository (abstraction)
+        ↓
+EF Core (Infrastructure)
+        ↓
+SQLite Database
+```
 
-Interfaces:
+---
 
--   IUserRepository
--   IPasswordHasher
+## 🔐 Authentication & Authorization
 
-------------------------------------------------------------------------
+### Authentication
+- Custom JWT implementation (no ASP.NET Identity)
+- Claims include:
+  - `sub` (UserId)
+  - `email`
+  - `role`
 
-## Infrastructure Layer
+### Authorization
+- Role-based:
 
-Implements persistence and external dependencies using EF Core and
-SQLite.
+```csharp
+[Authorize(Roles = "Instructor,Admin")]
+```
 
-Features:
+- Policy-based (extensible):
 
--   AppDbContext configured with EF Core
--   SQLite database integration
--   User entity Fluent API configuration
--   UserRepository implementation using EF Core
--   Database migrations enabled
--   Persistent user storage
+```csharp
+[Authorize(Policy = "InstructorOnly")]
+```
 
-Database table:
+---
 
-    Users
-     ├─ Id
-     ├─ FirstName
-     ├─ LastName
-     ├─ Email (Unique)
-     ├─ PasswordHash
-     ├─ Role
-     ├─ CreatedAtUtc
-     └─ UpdatedAtUtc
+## 📦 Features Implemented
 
-------------------------------------------------------------------------
+### Authentication
+- User registration
+- Login with JWT token generation
+- Password hashing abstraction
 
-## API Layer
+### Authorization
+- Role-based access control
+- Protected endpoints
 
-Implements RESTful HTTP endpoints.
+### Courses
+- Public listing: `GET /api/courses`
+- Instructor/Admin creation: `POST /api/courses`
+- Course persistence via EF Core
 
-Implemented endpoint:
+---
 
-    POST /api/auth/register
+## 🗄️ Database
 
-Capabilities:
+SQLite via EF Core.
 
--   Accepts registration requests
--   Validates business logic
--   Persists users
--   Returns structured responses
+### Users Table
+- Id (GUID)
+- FirstName
+- LastName
+- Email (Unique)
+- PasswordHash
+- Role
+- CreatedAtUtc
 
-Swagger/OpenAPI enabled for documentation and testing.
+### Courses Table
+- Id (GUID)
+- Title
+- Description
+- InstructorId
+- IsPublished
+- CreatedAtUtc
 
-------------------------------------------------------------------------
+---
 
-## Testing
+## 🧪 Testing
 
-Unit testing implemented using:
+Unit testing with:
+- xUnit
+- FluentAssertions
+- Moq
 
--   xUnit
--   FluentAssertions
--   Moq
+Covers:
+- Domain validation
+- Application use cases
+- Repository interactions
 
-Tests cover:
+---
 
--   Domain validation
--   Business use cases
--   Service logic correctness
+## ⚙️ Tech Stack
 
-------------------------------------------------------------------------
+- .NET (ASP.NET Core Web API)
+- Entity Framework Core
+- SQLite
+- JWT Authentication
+- Swashbuckle (Swagger)
 
-## Technology Stack
+---
 
-Backend:
+## 🧠 Key Design Decisions
 
--   .NET 8
--   ASP.NET Core Web API
--   Entity Framework Core
--   SQLite
--   Clean Architecture
+### Why NOT ASP.NET Identity?
+- Keeps Domain layer clean
+- Full control over authentication
+- Better alignment with API-first SaaS systems
 
-Testing:
+### Why Clean Architecture?
+- Separation of concerns
+- Testability
+- Scalability
 
--   xUnit
--   FluentAssertions
--   Moq
+### Why Vertical Slices?
+- Feature isolation
+- Easier maintenance
+- Clear business logic boundaries
 
-Documentation:
+### Why SQLite?
+- Lightweight for development
+- Easy to migrate to SQL Server/Postgres later
 
--   Swagger / OpenAPI
+---
 
-------------------------------------------------------------------------
+## ▶️ Running the Project
 
-## Current Capabilities
+```bash
+dotnet restore
+dotnet build
+dotnet run --project src/NareshLearn.Api
+```
 
--   Persistent user registration
--   Role assignment
--   Duplicate email prevention
--   Domain validation
--   Database persistence
--   REST API endpoint
--   Swagger API documentation
--   Unit tested business logic
+Open Swagger:
 
-------------------------------------------------------------------------
+```
+http://localhost:xxxx/swagger
+```
 
-## Future Roadmap
+---
 
-Planned features:
+## 🧭 Future Direction
 
--   JWT authentication
--   Login endpoint
--   Role-based authorization
--   Course management
--   Enrollment system
--   Angular frontend integration
--   Integration tests
--   Docker support
--   CI/CD pipeline
+The project is intentionally evolving toward a **full-stack SaaS LMS platform** with:
 
-------------------------------------------------------------------------
+- Angular frontend
+- Secure authentication flows
+- Course lifecycle management
+- Enrollment and progress tracking
+- Cloud deployment and CI/CD
 
-## Purpose
+---
 
-This project was built as part of a professional reskilling effort to
-demonstrate enterprise-grade .NET backend development skills suitable
-for full-stack .NET roles.
+## 🎯 Purpose
 
-It showcases real-world architecture patterns used in modern production
-systems.
+This project was built as part of a professional reskilling effort to demonstrate:
+
+- Modern .NET backend engineering
+- Clean Architecture + vertical slices
+- Real-world API design
+- Production-ready authentication systems
+
+It represents a **portfolio-quality backend system** suitable for roles in full-stack development and AI-enabled product engineering.
+

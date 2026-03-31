@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.infrastructure\\data\\configurations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|solutionrelative:src\\nareshlearn.infrastructure\\data\\configurations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\auth\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\auth\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\nareshlearn.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\nareshlearn.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{773CA46C-7BFB-ECCA-168A-72F1B4F5D8EE}|tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\tests\\nareshlearn.unittests\\courses\\createcourseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{773CA46C-7BFB-ECCA-168A-72F1B4F5D8EE}|tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj|solutionrelative:tests\\nareshlearn.unittests\\courses\\createcourseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{773CA46C-7BFB-ECCA-168A-72F1B4F5D8EE}|tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\tests\\nareshlearn.unittests\\nareshlearn.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{773CA46C-7BFB-ECCA-168A-72F1B4F5D8EE}|tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj|solutionrelative:tests\\nareshlearn.unittests\\nareshlearn.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.domain\\courses\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|solutionrelative:src\\nareshlearn.domain\\courses\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.infrastructure\\data\\configurations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|solutionrelative:src\\nareshlearn.infrastructure\\data\\configurations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\auth\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\auth\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773CA46C-7BFB-ECCA-168A-72F1B4F5D8EE}|tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\tests\\nareshlearn.unittests\\courses\\createcourseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773CA46C-7BFB-ECCA-168A-72F1B4F5D8EE}|tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj|solutionrelative:tests\\nareshlearn.unittests\\courses\\createcourseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.infrastructure\\courses\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{98F22D14-9B7A-FFEB-A2AB-C67FDE3369CF}|src\\NareshLearn.Application\\NareshLearn.Application.csproj|solutionrelative:src\\nareshlearn.application\\courses\\list\\listcoursesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.domain\\courses\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|solutionrelative:src\\nareshlearn.domain\\courses\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.domain\\nareshlearn.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|solutionrelative:src\\nareshlearn.domain\\nareshlearn.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.infrastructure\\auth\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,16 +66,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\Courses\\Course.cs",
+              "RelativeDocumentMoniker": "src\\NareshLearn.Domain\\Courses\\Course.cs",
+              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\Courses\\Course.cs",
+              "RelativeToolTip": "src\\NareshLearn.Domain\\Courses\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T17:25:05.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ClaimsPrincipalExtensions.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs*",
-              "RelativeToolTip": "src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs*",
+              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs",
+              "RelativeToolTip": "src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-23T17:55:57.303Z",
@@ -91,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CreateCourseServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\tests\\NareshLearn.UnitTests\\Courses\\CreateCourseServiceTests.cs",
               "RelativeDocumentMoniker": "tests\\NareshLearn.UnitTests\\Courses\\CreateCourseServiceTests.cs",
@@ -100,19 +105,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-23T17:26:28.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NareshLearn.UnitTests",
-              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj",
-              "RelativeDocumentMoniker": "tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj",
-              "RelativeToolTip": "tests\\NareshLearn.UnitTests\\NareshLearn.UnitTests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-23T17:25:58.744Z",
               "EditorCaption": ""
             },
             {
@@ -130,15 +122,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "CourseConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Infrastructure\\Data\\Configurations\\CourseConfiguration.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Infrastructure\\Data\\Configurations\\CourseConfiguration.cs",
               "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Infrastructure\\Data\\Configurations\\CourseConfiguration.cs",
               "RelativeToolTip": "src\\NareshLearn.Infrastructure\\Data\\Configurations\\CourseConfiguration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-23T17:02:26.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Program.cs",
+              "RelativeToolTip": "src\\NareshLearn.Api\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T14:16:01.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T16:17:53.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T16:00:48.43Z",
               "EditorCaption": ""
             },
             {
@@ -156,59 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\CoursesController.cs*",
-              "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\CoursesController.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T16:17:53.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NareshLearn.Api",
-              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\NareshLearn.Api.csproj",
-              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\NareshLearn.Api.csproj",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\NareshLearn.Api.csproj*",
-              "RelativeToolTip": "src\\NareshLearn.Api\\NareshLearn.Api.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-19T16:32:50.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\Courses\\Course.cs",
-              "RelativeDocumentMoniker": "src\\NareshLearn.Domain\\Courses\\Course.cs",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\Courses\\Course.cs",
-              "RelativeToolTip": "src\\NareshLearn.Domain\\Courses\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T16:41:30.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Program.cs",
-              "RelativeToolTip": "src\\NareshLearn.Api\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAE8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T14:16:01.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "NareshLearn.Domain",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\NareshLearn.Domain.csproj",
               "RelativeDocumentMoniker": "src\\NareshLearn.Domain\\NareshLearn.Domain.csproj",
@@ -221,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "DebugController.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\DebugController.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\DebugController.cs",
@@ -234,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "JwtTokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Infrastructure\\Auth\\JwtTokenGenerator.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Infrastructure\\Auth\\JwtTokenGenerator.cs",
@@ -247,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "InMemoryUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Infrastructure\\Users\\InMemoryUserRepository.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Infrastructure\\Users\\InMemoryUserRepository.cs",
@@ -261,19 +240,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:00:48.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\AuthController.cs",
