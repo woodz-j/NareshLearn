@@ -1,1 +1,46 @@
-<p>course-list works!</p>
+<!--div class="course-list-page">
+  <h1>Courses</h1>
+
+  @if (isLoading) {
+    <p>Loading courses...</p>
+  } @else if (errorMessage) {
+    <p class="error">{{ errorMessage }}</p>
+  } @else if (courses.length === 0) {
+    <p>No courses available yet.</p>
+  } @else {
+    <div class="course-grid">
+      @for (course of courses; track course.id) {
+        <div class="course-card">
+          <h2>{{ course.title }}</h2>
+          <p>{{ course.description }}</p>
+          <small>Published: {{ course.isPublished ? 'Yes' : 'No' }}</small>
+        </div>
+      }
+    </div>
+  }
+</div-->
+<div class="course-list-page">
+  <h1>Courses</h1>
+
+  @if (errorMessage) {
+    <p class="error">{{ errorMessage }}</p>
+  }
+
+  @if (courses$ | async; as courses) {
+    @if (courses.length === 0) {
+      <p>No courses available yet.</p>
+    } @else {
+      <div class="course-grid">
+        @for (course of courses; track course.id) {
+          <div class="course-card">
+            <h2>{{ course.title }}</h2>
+            <p>{{ course.description }}</p>
+            <small>Published: {{ course.isPublished ? 'Yes' : 'No' }}</small>
+          </div>
+        }
+      </div>
+    }
+  } @else {
+    <p>(JW)Loading courses...</p>
+  }
+</div>

@@ -1,9 +1,54 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+//import { finalize } from 'rxjs';
+import { Observable, catchError, of, tap } from 'rxjs';
+import { ApiService } from '../../../core/services/api.service';
+import { CourseResponse } from '../../../shared/models/course.models';
 
 @Component({
   selector: 'app-course-list',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './course-list.html',
-  styleUrl: './course-list.scss',
+  styleUrl: './course-list.scss'
 })
-export class CourseList {}
+export class CourseList {
+  private apiService = inject(ApiService);
+
+  errorMessage = '';
+
+  courses$: Observable<CourseResponse[]> = this.apiService.getCourses().pipe(
+    tap(courses => console.log('Courses from API:', courses)),
+    catchError(err => {
+      console.error('Failed to load courses:', err);
+      this.errorMessage = 'Failed to load courses.';
+      return of([]);
+    })
+  );
+}
+/*
+export class CourseList implements OnInit {
+  private apiService = inject(ApiService);
+
+  courses: CourseResponse[] = [];
+  isLoading = true;
+  errorMessage = '';
+
+  ngOnInit(): void {
+    this.apiService.getCourses()
+      .pipe(
+        finalize(() => {
+          this.isLoading = false;
+        })
+      )
+      .subscribe({
+        next: (response) => {
+          this.courses = response;
+        },
+        error: (err) => {
+          console.error('Failed to load courses:', err);
+          this.errorMessage = 'Failed to load courses.';
+        }
+      });
+  }
+}*/

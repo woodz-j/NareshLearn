@@ -23,3 +23,11 @@ export interface LoginResponse {
   role: string;
   accessToken: string;
 }
+
+export interface CourseResponse {
+  id: string;
+  title: string;
+  description: string;
+  instructorId: string;
+  isPublished: boolean;
+}
