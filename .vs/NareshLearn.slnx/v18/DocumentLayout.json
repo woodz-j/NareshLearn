@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.infrastructure\\data\\configurations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A59B662-EC48-355D-6B5B-87E39BE85496}|src\\NareshLearn.Infrastructure\\NareshLearn.Infrastructure.csproj|solutionrelative:src\\nareshlearn.infrastructure\\data\\configurations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.domain\\courses\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36667D2F-E4E9-9F50-44A1-E895565B42FF}|src\\NareshLearn.Domain\\NareshLearn.Domain.csproj|solutionrelative:src\\nareshlearn.domain\\courses\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|solutionrelative:src\\nareshlearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C32A1F4F-4029-BBDF-B765-135C666D574A}|src\\NareshLearn.Api\\NareshLearn.Api.csproj|c:\\users\\woodz\\.net projects\\nareshlearn\\src\\nareshlearn.api\\auth\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\Courses\\Course.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Domain\\Courses\\Course.cs",
@@ -78,8 +78,7 @@
               "RelativeToolTip": "src\\NareshLearn.Domain\\Courses\\Course.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T17:25:05.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T17:25:05.63Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "src\\NareshLearn.Api\\Auth\\ClaimsPrincipalExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T17:55:57.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T17:55:57.303Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "tests\\NareshLearn.UnitTests\\Courses\\CreateCourseServiceTests.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T17:26:28.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T17:26:28.406Z"
             },
             {
               "$type": "Document",
@@ -117,12 +114,11 @@
               "RelativeToolTip": "src\\NareshLearn.Infrastructure\\Courses\\CourseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T17:05:17.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T17:05:17.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CourseConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Infrastructure\\Data\\Configurations\\CourseConfiguration.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Infrastructure\\Data\\Configurations\\CourseConfiguration.cs",
@@ -135,20 +131,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Program.cs",
               "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Program.cs",
               "RelativeToolTip": "src\\NareshLearn.Api\\Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAHAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T14:16:01.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
@@ -156,12 +152,11 @@
               "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\CoursesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T16:17:53.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T16:17:53.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
@@ -169,8 +164,7 @@
               "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\ProfileController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:00:48.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T16:00:48.43Z"
             },
             {
               "$type": "Document",
@@ -182,21 +176,19 @@
               "RelativeToolTip": "src\\NareshLearn.Application\\Courses\\List\\ListCoursesService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T16:59:08.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T16:59:08.876Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "NareshLearn.Domain",
+              "Title": "NareshLearn.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\NareshLearn.Domain.csproj",
               "RelativeDocumentMoniker": "src\\NareshLearn.Domain\\NareshLearn.Domain.csproj",
               "ToolTip": "C:\\Users\\woodz\\.NET Projects\\NareshLearn\\src\\NareshLearn.Domain\\NareshLearn.Domain.csproj",
               "RelativeToolTip": "src\\NareshLearn.Domain\\NareshLearn.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-23T16:41:06.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T16:41:06.174Z"
             },
             {
               "$type": "Document",
@@ -208,8 +200,7 @@
               "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\DebugController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:17:46.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T18:17:46.921Z"
             },
             {
               "$type": "Document",
@@ -221,8 +212,7 @@
               "RelativeToolTip": "src\\NareshLearn.Infrastructure\\Auth\\JwtTokenGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:43:54.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:43:54.453Z"
             },
             {
               "$type": "Document",
@@ -234,8 +224,7 @@
               "RelativeToolTip": "src\\NareshLearn.Infrastructure\\Users\\InMemoryUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:02:46.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T16:02:46.367Z"
             },
             {
               "$type": "Document",
@@ -247,8 +236,7 @@
               "RelativeToolTip": "src\\NareshLearn.Api\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T15:57:52.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T15:57:52.396Z"
             }
           ]
         }
