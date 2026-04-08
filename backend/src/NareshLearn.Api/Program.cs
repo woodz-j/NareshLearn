@@ -116,11 +116,11 @@ var app = builder.Build();
 
 // Configure middleware pipeline
 
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 app.UseCors("AngularFrontend");
@@ -145,5 +145,7 @@ using (var scope = app.Services.CreateScope())
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     dbContext.Database.Migrate();
 }
+
+app.MapGet("/", () => Results.Ok("NareshLearn API is running."));
 
 app.Run();
