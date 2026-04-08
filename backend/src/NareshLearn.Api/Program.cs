@@ -138,4 +138,12 @@ app.UseAuthorization();
 // Enables controller endpoints
 app.MapControllers();
 
+// Apply migrations automatically on app startup. (Docker)
+// This makes the app create/apply migrations automatically when the container starts.
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
+
 app.Run();
