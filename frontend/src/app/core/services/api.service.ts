@@ -8,8 +8,9 @@ import { CourseResponse, CreateCourseRequest } from '../../shared/models/course.
 })
 export class ApiService {
   private http = inject(HttpClient);
-  private readonly baseUrl = 'http://localhost:5149/api';
-
+  //private readonly baseUrl = 'http://localhost:5149/api';
+  private readonly baseUrl = 'https://nareshlearnapi20260408172133-gygfaphwdaccb0cu.canadacentral-01.azurewebsites.net/api';
+  
   getCourses(): Observable<CourseResponse[]> {
     return this.http.get<CourseResponse[]>(`${this.baseUrl}/courses`);
   }
