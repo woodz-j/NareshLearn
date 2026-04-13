@@ -1,0 +1,43 @@
+name: Deploy backend to Azure App Service
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore NareshLearn.sln
+
+      - name: Build
+        run: dotnet build NareshLearn.sln --configuration Release --no-restore
+
+      - name: Run unit tests
+        run: dotnet test tests/NareshLearn.UnitTests/NareshLearn.UnitTests.csproj --configuration Release --no-build --verbosity normal
+
+      - name: Publish API
+        run: dotnet publish src/NareshLearn.Api/NareshLearn.Api.csproj -c Release -o ${{ github.workspace }}/publish
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: nareshlearnapi20260408172133-gygfaphwdaccb0cu
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ${{ github.workspace }}/publish
