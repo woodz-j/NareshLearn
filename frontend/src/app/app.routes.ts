@@ -7,6 +7,7 @@ import { Home } from './features/dashboard/home/home';
 import { authGuard } from './core/guards/auth-guard';
 import { instructorGuard } from './core/guards/instructor-guard';
 
+/*
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'login', component: Login },
@@ -18,4 +19,15 @@ export const routes: Routes = [
     canActivate: [authGuard, instructorGuard]
   },
   { path: '**', redirectTo: '' }
+];
+*/
+export const routes: Routes = [
+  { path: '', redirectTo: 'courses', pathMatch: 'full' },
+  { path: 'login', component: Login },
+  { path: 'courses', component: CourseList },
+  {
+    path: 'courses/create',
+    component: CourseCreate,
+    canActivate: [authGuard, instructorGuard]
+  }
 ];

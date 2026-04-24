@@ -1,0 +1,32 @@
+.app-header {
+  background: #1f2937;
+  padding: 1rem;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.nav button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.app-content {
+  padding: 1rem;
+}

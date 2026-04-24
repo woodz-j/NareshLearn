@@ -1,1 +1,31 @@
-<p>course-create works!</p>
+<!--p>course-create works!</p-->
+<div class="course-create-page">
+  <div class="course-create-card">
+    <h1>Create Course</h1>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-field">
+        <label for="title">Title</label>
+        <input id="title" type="text" formControlName="title" />
+        @if (form.controls.title.touched && form.controls.title.invalid) {
+          <small>Title is required and must be 200 characters or less.</small>
+        }
+      </div>
+
+      <div class="form-field">
+        <label for="description">Description</label>
+        <textarea id="description" rows="5" formControlName="description"></textarea>
+      </div>
+
+      @if (errorMessage) {
+        <div class="error-message">
+          {{ errorMessage }}
+        </div>
+      }
+
+      <button type="submit" [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Creating...' : 'Create Course' }}
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
+import { environment } from '../../../environments/environment';
 import { LoginRequest, LoginResponse, RegisterRequest, RegisterResponse } from '../../shared/models/auth.models';
 
 @Injectable({
@@ -8,7 +9,8 @@ import { LoginRequest, LoginResponse, RegisterRequest, RegisterResponse } from '
 })
 export class AuthService {
   private http = inject(HttpClient);
-  private readonly baseUrl = 'http://localhost:5149/api/auth';
+
+  private readonly baseUrl = `${environment.apiUrl}/auth`;
   private readonly tokenKey = 'nareshlearn_token';
   private readonly roleKey = 'nareshlearn_role';
 
@@ -17,6 +19,7 @@ export class AuthService {
   }
 
   login(request: LoginRequest): Observable<LoginResponse> {
+    console.log('Base URL auth:', this.baseUrl);
     return this.http.post<LoginResponse>(`${this.baseUrl}/login`, request).pipe(
       tap(response => {
         localStorage.setItem(this.tokenKey, response.accessToken);

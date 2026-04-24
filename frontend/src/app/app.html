@@ -184,7 +184,7 @@
   }
 </style>
 
-<main class="main">
+<!--main class="main">
   <div class="content">
     <div class="left-side">
       <svg
@@ -330,7 +330,7 @@
       </div>
     </div>
   </div>
-</main>
+</main-->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -341,4 +341,25 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+<header class="app-header">
+  <nav class="nav">
+    <a routerLink="/courses">Courses</a>
+
+    <span class="spacer"></span>
+
+    @if (!authService.isLoggedIn()) {
+      <a routerLink="/login">Login</a>
+    }
+
+    @if (authService.isLoggedIn()) {
+      <a routerLink="/courses/create" *ngIf="authService.isInstructorOrAdmin()">
+        Create Course
+      </a>
+       <button (click)="logout()">Logout</button>
+    }
+  </nav>
+</header>
+
+<main class="app-content">
+  <router-outlet></router-outlet>
+</main>

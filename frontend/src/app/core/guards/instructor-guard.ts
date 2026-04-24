@@ -2,7 +2,7 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
 
-export const instructorGuard: CanActivateFn = () => {
+export const instructorGuard: CanActivateFn = (state) => {
   const authService = inject(AuthService);
   const router = inject(Router);
 
@@ -10,5 +10,8 @@ export const instructorGuard: CanActivateFn = () => {
     return true;
   }
 
-  return router.createUrlTree(['/']);
+  //return router.createUrlTree(['/']);
+  return router.createUrlTree(['/login'], {
+    queryParams: { returnUrl: state.url }
+  });
 };
