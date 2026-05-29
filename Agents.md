@@ -85,3 +85,9 @@ Be concise and mindful of context/token usage. Avoid unnecessary explanations. I
   2. Files changed
   3. Outstanding tasks
   4. Suggested first prompt for the next chat
+
+## Reference Requirements
+
+Before proposing roadmap items or implementing new features, review:
+
+docs/job-specs/client-requirements.md
