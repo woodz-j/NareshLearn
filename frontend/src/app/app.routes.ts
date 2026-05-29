@@ -24,10 +24,12 @@ export const routes: Routes = [
 export const routes: Routes = [
   { path: '', redirectTo: 'courses', pathMatch: 'full' },
   { path: 'login', component: Login },
+  { path: 'register', component: Register },
   { path: 'courses', component: CourseList },
   {
     path: 'courses/create',
     component: CourseCreate,
     canActivate: [authGuard, instructorGuard]
-  }
+  },
+  { path: '**', redirectTo: 'courses' }
 ];
