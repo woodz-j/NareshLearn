@@ -341,8 +341,10 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="app-header">
-  <nav class="nav">
+  <nav class="nav" aria-label="Primary navigation">
     <a routerLink="/courses">Courses</a>
 
     <span class="spacer"></span>
@@ -356,11 +358,11 @@
       <a routerLink="/courses/create" *ngIf="authService.isInstructorOrAdmin()">
         Create Course
       </a>
-       <button (click)="logout()">Logout</button>
+       <button type="button" (click)="logout()">Logout</button>
     }
   </nav>
 </header>
 
-<main class="app-content">
+<main id="main-content" class="app-content" tabindex="-1">
   <router-outlet></router-outlet>
 </main>

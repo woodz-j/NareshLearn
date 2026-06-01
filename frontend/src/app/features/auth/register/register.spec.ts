@@ -52,6 +52,19 @@ describe('Register', () => {
     expect(component.form.controls.firstName.touched).toBe(true);
   });
 
+  it('should render accessible validation messages when invalid', () => {
+    component.onSubmit();
+    fixture.detectChanges();
+
+    const firstName = fixture.nativeElement.querySelector('#firstName') as HTMLInputElement;
+    const email = fixture.nativeElement.querySelector('#email') as HTMLInputElement;
+
+    expect(firstName.getAttribute('aria-invalid')).toBe('true');
+    expect(firstName.getAttribute('aria-describedby')).toBe('firstName-error');
+    expect(email.getAttribute('aria-invalid')).toBe('true');
+    expect(fixture.nativeElement.textContent).toContain('Password is required.');
+  });
+
   it('should register and navigate to login on success', () => {
     authService.register.mockReturnValue(
       of({ userId: 'user-1', email: 'student@example.com', role: 'Student' })
@@ -92,5 +105,26 @@ describe('Register', () => {
 
     expect(component.errorMessage).toBe('Email already exists.');
     expect(component.isSubmitting).toBe(false);
+  });
+
+  it('should expose API errors as alerts', () => {
+    authService.register.mockReturnValue(
+      throwError(() => ({ error: { error: 'Email already exists.' } }))
+    );
+    component.form.setValue({
+      firstName: 'Naresh',
+      lastName: 'Student',
+      email: 'student@example.com',
+      password: 'password',
+      role: 1
+    });
+
+    component.onSubmit();
+    fixture.detectChanges();
+
+    const alert = fixture.nativeElement.querySelector('[role="alert"]') as HTMLElement;
+
+    expect(alert.textContent).toContain('Email already exists.');
+    expect(alert.getAttribute('aria-live')).toBe('assertive');
   });
 });

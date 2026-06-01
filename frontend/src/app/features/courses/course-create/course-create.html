@@ -3,12 +3,18 @@
   <div class="course-create-card">
     <h1>Create Course</h1>
 
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
       <div class="form-field">
         <label for="title">Title</label>
-        <input id="title" type="text" formControlName="title" />
+        <input
+          id="title"
+          type="text"
+          formControlName="title"
+          [attr.aria-describedby]="form.controls.title.touched && form.controls.title.invalid ? 'course-title-error' : null"
+          [attr.aria-invalid]="form.controls.title.touched && form.controls.title.invalid"
+        />
         @if (form.controls.title.touched && form.controls.title.invalid) {
-          <small>Title is required and must be 200 characters or less.</small>
+          <small id="course-title-error">Title is required and must be 200 characters or less.</small>
         }
       </div>
 
@@ -18,7 +24,7 @@
       </div>
 
       @if (errorMessage) {
-        <div class="error-message">
+        <div class="error-message" role="alert" aria-live="assertive">
           {{ errorMessage }}
         </div>
       }

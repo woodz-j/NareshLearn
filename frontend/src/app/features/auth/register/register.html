@@ -10,7 +10,8 @@
           type="text"
           formControlName="firstName"
           autocomplete="given-name"
-          aria-describedby="firstName-error"
+          [attr.aria-describedby]="form.controls.firstName.touched && form.controls.firstName.invalid ? 'firstName-error' : null"
+          [attr.aria-invalid]="form.controls.firstName.touched && form.controls.firstName.invalid"
         />
         @if (form.controls.firstName.touched && form.controls.firstName.invalid) {
           <small id="firstName-error">First name is required and must be 100 characters or less.</small>
@@ -24,7 +25,8 @@
           type="text"
           formControlName="lastName"
           autocomplete="family-name"
-          aria-describedby="lastName-error"
+          [attr.aria-describedby]="form.controls.lastName.touched && form.controls.lastName.invalid ? 'lastName-error' : null"
+          [attr.aria-invalid]="form.controls.lastName.touched && form.controls.lastName.invalid"
         />
         @if (form.controls.lastName.touched && form.controls.lastName.invalid) {
           <small id="lastName-error">Last name is required and must be 100 characters or less.</small>
@@ -38,10 +40,11 @@
           type="email"
           formControlName="email"
           autocomplete="email"
-          aria-describedby="email-error"
+          [attr.aria-describedby]="form.controls.email.touched && form.controls.email.invalid ? 'register-email-error' : null"
+          [attr.aria-invalid]="form.controls.email.touched && form.controls.email.invalid"
         />
         @if (form.controls.email.touched && form.controls.email.invalid) {
-          <small id="email-error">Enter a valid email address.</small>
+          <small id="register-email-error">Enter a valid email address.</small>
         }
       </div>
 
@@ -52,10 +55,11 @@
           type="password"
           formControlName="password"
           autocomplete="new-password"
-          aria-describedby="password-error"
+          [attr.aria-describedby]="form.controls.password.touched && form.controls.password.invalid ? 'register-password-error' : null"
+          [attr.aria-invalid]="form.controls.password.touched && form.controls.password.invalid"
         />
         @if (form.controls.password.touched && form.controls.password.invalid) {
-          <small id="password-error">Password is required.</small>
+          <small id="register-password-error">Password is required.</small>
         }
       </div>
 
@@ -70,7 +74,7 @@
       </div>
 
       @if (errorMessage) {
-        <div class="error-message" role="alert">
+        <div class="error-message" role="alert" aria-live="assertive">
           {{ errorMessage }}
         </div>
       }

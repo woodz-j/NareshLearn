@@ -1,3 +1,21 @@
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  transform: translateY(-150%);
+  background: #fff;
+  color: #111827;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
 .app-header {
   background: #1f2937;
   padding: 1rem;
@@ -15,6 +33,12 @@
   text-decoration: none;
 }
 
+.nav a:focus-visible,
+.nav button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
 .nav button {
   background: transparent;
   border: 1px solid white;
@@ -29,4 +53,8 @@
 
 .app-content {
   padding: 1rem;
+}
+
+.app-content:focus {
+  outline: none;
 }

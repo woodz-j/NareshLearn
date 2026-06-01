@@ -1,9 +1,14 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 //import { finalize } from 'rxjs';
-import { Observable, catchError, of, tap } from 'rxjs';
+import { Observable, catchError, map, of, tap } from 'rxjs';
 import { ApiService } from '../../../core/services/api.service';
 import { CourseResponse } from '../../../shared/models/course.models';
+
+interface CourseListState {
+  courses: CourseResponse[];
+  errorMessage: string;
+}
 
 @Component({
   selector: 'app-course-list',
@@ -15,14 +20,12 @@ import { CourseResponse } from '../../../shared/models/course.models';
 export class CourseList {
   private apiService = inject(ApiService);
 
-  errorMessage = '';
-
-  courses$: Observable<CourseResponse[]> = this.apiService.getCourses().pipe(
+  coursesState$: Observable<CourseListState> = this.apiService.getCourses().pipe(
     tap(courses => console.log('Courses from API:', courses)),
+    map(courses => ({ courses, errorMessage: '' })),
     catchError(err => {
       console.error('Failed to load courses:', err);
-      this.errorMessage = 'Failed to load courses.';
-      return of([]);
+      return of({ courses: [], errorMessage: 'Failed to load courses.' });
     })
   );
 }

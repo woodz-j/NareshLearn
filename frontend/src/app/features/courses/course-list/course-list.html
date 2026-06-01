@@ -19,28 +19,26 @@
     </div>
   }
 </div-->
-<div class="course-list-page">
-  <h1>Courses</h1>
+<section class="course-list-page" aria-labelledby="courses-heading">
+  <h1 id="courses-heading">Courses</h1>
 
-  @if (errorMessage) {
-    <p class="error">{{ errorMessage }}</p>
-  }
-
-  @if (courses$ | async; as courses) {
-    @if (courses.length === 0) {
-      <p>No courses available yet.</p>
+  @if (coursesState$ | async; as state) {
+    @if (state.errorMessage) {
+      <p class="error" role="alert" aria-live="assertive">{{ state.errorMessage }}</p>
+    } @else if (state.courses.length === 0) {
+      <p class="empty-state" role="status">No courses available yet.</p>
     } @else {
-      <div class="course-grid">
-        @for (course of courses; track course.id) {
-          <div class="course-card">
+      <div class="course-grid" aria-label="Available courses">
+        @for (course of state.courses; track course.id) {
+          <article class="course-card">
             <h2>{{ course.title }}</h2>
             <p>{{ course.description }}</p>
             <small>Published: {{ course.isPublished ? 'Yes' : 'No' }}</small>
-          </div>
+          </article>
         }
       </div>
     }
   } @else {
-    <p>(JW)Loading courses...</p>
+    <p class="loading-state" role="status" aria-live="polite">Loading courses...</p>
   }
-</div>
+</section>
